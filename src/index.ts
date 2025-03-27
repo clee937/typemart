@@ -33,3 +33,10 @@ if (parseFloat(product.price) > 25) {
 } else {
   shipping = 5;
 }
+
+// Check the amount of tax to pay
+if (shippingAddress.match("New York")) {
+  taxPercent = 0.1;
+} else {
+  taxPercent = 0.05;
+}
