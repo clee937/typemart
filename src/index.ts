@@ -1,6 +1,6 @@
 import products from "./products";
 
-const productName: string = "shirt";
+const productName: string = "beanie";
 let shipping: number;
 let taxPercent: number;
 let taxTotal: number;
@@ -40,3 +40,16 @@ if (shippingAddress.match("New York")) {
 } else {
   taxPercent = 0.05;
 }
+
+taxTotal = parseFloat(product.price) * taxPercent;
+
+total = parseFloat(product.price) + taxTotal + shipping;
+
+console.log(`RECEIPT: 
+Product: ${product.name} 
+Address: ${shippingAddress},
+Price: $${parseFloat(product.price).toFixed(2)}
+Tax: $${taxTotal.toFixed(2)}
+Shipping: $${shipping.toFixed(2)}
+Total: $${total.toFixed(2)}
+`);
