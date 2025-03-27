@@ -25,3 +25,11 @@ const preOrder = product.preOrder.toLowerCase() === "true";
 if (preOrder) {
   console.log("We'll notify you once the item has been despatched");
 }
+
+// Check if the product qualifies for free shipping
+if (parseFloat(product.price) > 25) {
+  shipping = 0;
+  console.log("This item includes free shipping.");
+} else {
+  shipping = 5;
+}
