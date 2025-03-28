@@ -2,7 +2,7 @@
 
 ## About
 
-Typemart is an online shop that processes customer orders and prints a receipt with the order and shipping details. A mini project that puts into practice TypeScript fundamentals - annotating types and fixing type errors - to ensure a simple purchase flow that is type-safe.
+Typemart is an online shop that processes customer orders and prints a receipt with the order and shipping details. This is a mini project that puts into practice TypeScript fundamentals - annotating types and fixing type errors - to ensure a simple purchase flow that is type-safe.
 
 ## Features
 
